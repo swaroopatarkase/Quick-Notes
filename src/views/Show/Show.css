@@ -1,0 +1,60 @@
+.main-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styles */
+  .add-heading {
+    font-size: 2em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .text-heighlight {
+    color: #ff5733;
+  }
+  
+  /* Tagline Styles */
+  .tag-line {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  /* Notes Container Styles */
+  .notes-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Note Card Styles */
+  .note-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note-title {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .note-category {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .note-description {
+    color: #343a40;
+  }
+  
