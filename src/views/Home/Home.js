@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import left from './work.png';
 
@@ -25,8 +26,13 @@ function Home() {
       </div>
 
       <div className='button-container'>
-        <button className='btn-primary'>✍️ Add Note</button>
-        <button className='btn-primary'>🗒️ View Notes</button>
+        <Link to={"/add"}>
+          <button className="btn-primary">✍️Add Note</button>
+        </Link>
+        <Link to={"/show"}>
+          <button className="btn-primary">🗒️Show Note</button>
+        </Link>
+
       </div>
     </div>
   );
