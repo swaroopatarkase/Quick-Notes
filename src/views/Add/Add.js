@@ -36,7 +36,7 @@ const Add = () => {
 
   return (
     <div className='main-container'>
-      <div className='heading-txt add-heading'>Add Note📝</div>
+      <div className='heading-txt add-heading'>Add Note✍️</div>
       <p className='tag-line '>Share Notes of the day!</p>
 
       <div className='form-div'>

@@ -27,10 +27,10 @@ function Home() {
 
       <div className='button-container'>
         <Link to={"/add"}>
-          <button className="btn-primary">✍️Add Note</button>
+          <button className="btn-primary">Add Note✍️</button>
         </Link>
         <Link to={"/show"}>
-          <button className="btn-primary">🗒️Show Note</button>
+          <button className="btn-primary">Show Note🗒️</button>
         </Link>
 
       </div>
