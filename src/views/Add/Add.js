@@ -49,10 +49,10 @@ const Add = () => {
           setcategory(e.target.value)
         }}>
           <option>Select</option>
-          <option className='select' value='common'>Regular</option>
-          <option className='select' value='education'>Education</option>
-          <option className='select' value='outdoor'>Outdoor</option>
-          <option className='select' value='shoping'>Shopping</option>
+          <option className='select' value='common'>Regular🤩</option>
+          <option className='select' value='education'>Education📚</option>
+          <option className='select' value='outdoor'>Outdoor🏏</option>
+          <option className='select' value='shoping'>Shopping🛍️</option>
         </select>
         <textarea className='form-inputs txt-area' placeholder='Add the description' value={description} onChange={(e) => {
           setdescription(e.target.value)
