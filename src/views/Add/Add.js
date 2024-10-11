@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Add.css'
 import toast from 'react-hot-toast';
-import left from '../Home/work.png';
+import left from './imgs.png';
 
 const Add = () => {
 

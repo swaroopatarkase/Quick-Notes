@@ -1,6 +1,6 @@
 import React from 'react';
 import './Show.css';
-import left from '../Home/work.png';
+import left from '../Add/imgs.png';
 
 const Show = () => {
   const Notes = JSON.parse(localStorage.getItem('Notes')) || [];
