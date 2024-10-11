@@ -1,96 +1,95 @@
-import React, { useState } from 'react'
-import './Add.css'
+import React, { useState } from 'react';
+import './Add.css';
 import toast from 'react-hot-toast';
-import left from './imgs.png';
+import left from '../Home/rb_2148222501.png';
 
 const Add = () => {
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
+  const [description, setDescription] = useState('');
 
-  const [tittle, setTittle] = useState('')
-  const [category, setcategory] = useState('')
-  const [description, setdescription] = useState('')
+  const notify = (message, type) => {
+    toast[type === 'e' ? 'error' : 'success'](message);
+  };
 
-  // create toast messagegs...
-  const notify = (Message, type) => {
-    if (type === 'e') {
-      toast.error(Message)
-    } else if (type === 's') {
-      toast.success(Message)
-    }
-  }
-
-
-  //add notes into localStorage....
   const addNotes = () => {
-    if (tittle.length <= 0 && description.length <= 0 && category === '') {
-      toast.error('please fill full add fields', 'e')
-    } else {
-      let Notes = JSON.parse(localStorage.getItem('Notes')) || []
-      Notes.push({ tittle, description, category })
-      localStorage.setItem('Notes', JSON.stringify(Notes))
-      setTittle('')
-      setcategory('')
-      setdescription('')
-      notify('add note successfully...', 's')
+    if (!title) {
+      return notify('Title is required', 'e');
     }
-  }
+    if (!description) {
+      return notify('Description is required', 'e');
+    }
+    if (!category) {
+      return notify('Please select a category', 'e');
+    }
 
+    const notes = JSON.parse(localStorage.getItem('Notes')) || [];
+    notes.push({ title, description, category });
+    localStorage.setItem('Notes', JSON.stringify(notes));
+
+    setTitle('');
+    setCategory('');
+    setDescription('');
+    notify('Note added successfully!', 's');
+  };
 
   return (
-    <div>  
-      <h1 className='text-center text-primary'>Add Note✍️</h1>
-      <p className='tag-line '>Share Notes of the day!</p>
+    <div>
+      <h1 className='text-center text-primary'>Add Note ✍️</h1>
+      <p className='tag-line'>Share Notes of the day!</p>
 
       <div className='main'>
-        <div>
-          <img src={left} alt='Work illustration' />
-        </div>
-        <div>
-          <p>
-            Welcome to Quick Notes, your go-to platform for capturing thoughts, ideas, and important information effortlessly! Whether you’re a busy professional, a student, or someone who loves to jot down insights, our user-friendly interface makes it easy to create, organize, and access your notes anytime, anywhere.
-          </p>
-          <p>
-            Enjoy seamless syncing across devices, customizable templates, and powerful search features that ensure you never lose track of what matters most. Start jotting down your ideas today and experience the convenience of Quick Notes!
-          </p>
-        </div>
-      </div>
-
-      <div className='main-container'>
         <div className='form-div'>
-          <input placeholder='Enter the tittle'
-            className='form-inputs'
-            value={tittle} onChange={(e) => {
-              setTittle(e.target.value)
-            }}></input>
-          <select placeholder="select" className='form-inputs' value={category} onChange={(e) => {
-            setcategory(e.target.value)
-          }}>
-            <option>Select</option>
-            <option className='select' value='common'>Regular🤩</option>
-            <option className='select' value='education'>Education📚</option>
-            <option className='select' value='outdoor'>Outdoor🏏</option>
-            <option className='select' value='shoping'>Shopping🛍️</option>
-          </select>
-          <textarea className='form-inputs txt-area' placeholder='Add the description' value={description} onChange={(e) => {
-            setdescription(e.target.value)
-          }}></textarea>
+          <div className='form-container'>
+            <input
+              placeholder='Enter the title'
+              className='form-inputs'
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+            <select
+              className='form-inputs'
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option value=''>Select</option>
+              <option value='common'>Regular 🤩</option>
+              <option value='education'>Education 📚</option>
+              <option value='outdoor'>Outdoor 🏏</option>
+              <option value='shopping'>Shopping 🛍️</option>
+            </select>
+            <textarea
+              className='form-inputs txt-area'
+              placeholder='Add the description'
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            ></textarea>
 
-          <div className='btns'>
-            <button className='bnt' onClick={() => {
-              addNotes()
-            }}>Add Note </button>
-
-            <button className='bnt btn-sec' onClick={() => {
-              setTittle('')
-              setcategory('')
-              setdescription('')
-              notify('clear successfully', 's')
-            }}>Clear</button>
+            <div className='btns'>
+              <button className='bnt' onClick={addNotes}>
+                Add Note
+              </button>
+              <button
+                className='bnt btn-sec'
+                onClick={() => {
+                  setTitle('');
+                  setCategory('');
+                  setDescription('');
+                  notify('Cleared successfully', 's');
+                }}
+              >
+                Clear
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
-      )
 
-}
+        <div className='img-container'>
+          <img src={left} alt='Work illustration' />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-      export default Add
+export default Add;
