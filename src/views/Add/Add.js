@@ -52,7 +52,7 @@ const Add = () => {
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option value=''>Select</option>
+              <option value=''>Select Category</option>
               <option value='Regular🤩'>Regular 🤩</option>
               <option value='Education📚'>Education 📚</option>
               <option value='Outdoor'>Outdoor 🏏</option>
