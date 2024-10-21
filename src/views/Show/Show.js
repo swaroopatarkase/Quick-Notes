@@ -1,17 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Show.css';
+import home from '../Home/home-button.png';
 
 const Show = () => {
   const Notes = JSON.parse(localStorage.getItem('Notes')) || [];
 
   return (
     <div>
-      <Link to="/" className='link'>
-      <i class="ri-home-5-line"></i></Link>
-      <div className='text-center text-primary'>
-        View Notes🗒️
-      </div>
+      <div className="header">
+  <Link to="/" className='link'>
+    <img src={home} alt='Go to home' className='icon' />
+  </Link>
+  <div className='text-center header-title text-primary'>
+    View Notes 🗒️
+  </div>
+</div>
+
+
       <p className='tag-line'>View all your notes!</p>
 
       <div className='main-container'>

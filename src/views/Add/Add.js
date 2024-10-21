@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Add.css';
 import toast from 'react-hot-toast';
 import left from '../Home/rb_2148222501.png';
@@ -36,7 +37,7 @@ const Add = () => {
 
   return (
     <div>
-      <img src={home} alt='Work illustration' className='icon' />
+      <Link to="/" className='link'><img src={home} alt='Work illustration' className='icon' /></Link>
       <h1 className='text-center text-primary'>Add Note ✍️</h1>
       <p className='tag-line'>Share Notes of the day!</p>
 

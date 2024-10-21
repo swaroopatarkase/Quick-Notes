@@ -19,6 +19,12 @@
   padding: 15px;
   margin: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.note-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .note-title {
@@ -41,3 +47,58 @@
   color: #343a40;
 }
 
+
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.tag-line {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+/* Button styles for the "Add a Note" link */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1em;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Space between items */
+  padding: 0 20px; /* Add padding for spacing */
+  margin-bottom: 20px; /* Space between header and notes */
+}
+
+.header-title {
+  flex: 1; /* Allow the title to take up available space */
+  text-align: center; /* Center the title */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.icon {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+}
