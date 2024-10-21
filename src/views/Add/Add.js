@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Add.css';
 import toast from 'react-hot-toast';
 import left from '../Home/rb_2148222501.png';
+import home from '../Home/home-button.png';
 
 const Add = () => {
   const [title, setTitle] = useState('');
@@ -35,6 +36,7 @@ const Add = () => {
 
   return (
     <div>
+      <img src={home} alt='Work illustration' className='icon' />
       <h1 className='text-center text-primary'>Add Note ✍️</h1>
       <p className='tag-line'>Share Notes of the day!</p>
 

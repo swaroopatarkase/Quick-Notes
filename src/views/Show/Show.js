@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Show.css';
 
 const Show = () => {
@@ -6,6 +7,8 @@ const Show = () => {
 
   return (
     <div>
+      <Link to="/" className='link'>
+      <i class="ri-home-5-line"></i></Link>
       <div className='text-center text-primary'>
         View Notes🗒️
       </div>
