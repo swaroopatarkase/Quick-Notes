@@ -16,8 +16,6 @@ const Show = () => {
           View Notes 🗒️
         </div>
       </div>
-      <p className='tag-line'>View all your notes!</p>
-
       <div className='main-container'>
         <div className='notes-container'>
           {Notes.length === 0 ? (

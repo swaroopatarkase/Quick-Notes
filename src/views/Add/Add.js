@@ -42,11 +42,10 @@ const Add = () => {
           <img src={home} alt='Go to home' className='icon' />
         </Link>
         <div className='text-center header-title text-primary'>
-        Add Note ✍️
+          Add Note ✍️
         </div>
       </div>
-      <p className='tag-line'>Share Notes of the day!</p>
-
+      
 
       <div className='main'>
         <div className='form-div'>
