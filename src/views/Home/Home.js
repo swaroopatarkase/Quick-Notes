@@ -30,7 +30,7 @@ function Home() {
           <button className="btn-primary">Add Note✍️</button>
         </Link>
         <Link to={"/show"}>
-          <button className="btn-primary">Show Note🗒️</button>
+          <button className="btn-primary">View Note🗒️</button>
         </Link>
 
       </div>

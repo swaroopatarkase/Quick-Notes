@@ -9,15 +9,13 @@ const Show = () => {
   return (
     <div>
       <div className="header">
-  <Link to="/" className='link'>
-    <img src={home} alt='Go to home' className='icon' />
-  </Link>
-  <div className='text-center header-title text-primary'>
-    View Notes 🗒️
-  </div>
-</div>
-
-
+        <Link to="/" className='link'>
+          <img src={home} alt='Go to home' className='icon' />
+        </Link>
+        <div className='text-center header-title text-primary'>
+          View Notes 🗒️
+        </div>
+      </div>
       <p className='tag-line'>View all your notes!</p>
 
       <div className='main-container'>
@@ -27,7 +25,7 @@ const Show = () => {
           ) : (
             Notes.map((note, index) => (
               <div key={index} className='note-card'>
-                <h3 className='note-title'>{note.title}</h3> 
+                <h3 className='note-title'>{note.title}</h3>
                 <p className='note-category'>Category: {note.category}</p>
                 <p className='note-description'>{note.description}</p>
               </div>

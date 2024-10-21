@@ -37,9 +37,16 @@ const Add = () => {
 
   return (
     <div>
-      <Link to="/" className='link'><img src={home} alt='Work illustration' className='icon' /></Link>
-      <h1 className='text-center text-primary'>Add Note ✍️</h1>
+      <div className="header">
+        <Link to="/" className='link'>
+          <img src={home} alt='Go to home' className='icon' />
+        </Link>
+        <div className='text-center header-title text-primary'>
+        Add Note ✍️
+        </div>
+      </div>
       <p className='tag-line'>Share Notes of the day!</p>
+
 
       <div className='main'>
         <div className='form-div'>
