@@ -1,36 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .main-container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 90%; 
+  margin: 5% auto;
+  padding: 2rem; 
   background-color: transparent;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 .notes-container {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .note-card {
-  background-color: #f8f9fa;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
+  position: relative; 
+  border: 1px solid #ccc;
   padding: 15px;
-  margin: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.note-card:hover {
-  transform: scale(1.02);
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
   cursor: pointer;
 }
 
 .note-title {
   font-size: 1.5em;
   color: #007bff;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem; 
   text-align: center;
 }
 
@@ -39,16 +44,13 @@
   font-weight: bold;
   color: #343a40;
   border: 1px solid gray;
-  border-radius: 3px;
-  padding: 6px;
+  border-radius: 0.1875rem; 
+  padding: 0.375rem; 
 }
 
 .note-description {
   color: #343a40;
 }
-
-
-
 
 .text-center {
   text-align: center;
@@ -56,25 +58,24 @@
 
 .text-primary {
   color: #007bff;
-    font-size: 2.5em;
-    margin: 20px 0;
+  font-size: 2em; 
+  margin: 1.5rem 0; 
 }
 
 .tag-line {
   text-align: center;
-  font-size: 1.2em;
-  margin: 20px 0;
+  font-size: 1.2em; 
+  margin: 1.5rem 0; 
 }
 
-/* Button styles for the "Add a Note" link */
 .btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem; 
   font-size: 1em;
   color: white;
   background-color: #007bff;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   text-decoration: none;
   text-align: center;
 }
@@ -85,15 +86,15 @@
 
 .header {
   display: flex;
-  align-items: center; /* Align items vertically centered */
-  justify-content: space-between; /* Space between items */
-  padding: 0 20px; /* Add padding for spacing */
-  margin-bottom: 20px; /* Space between header and notes */
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 1rem; 
+  margin-bottom: 2rem; 
 }
 
 .header-title {
-  flex: 1; /* Allow the title to take up available space */
-  text-align: center; /* Center the title */
+  flex: 1; 
+  text-align: center; 
 }
 
 .link {
@@ -101,6 +102,21 @@
 }
 
 .icon {
-  width: 40px; /* Adjust size as needed */
+  width: 10vw; 
   height: auto;
+}
+
+.delete-button {
+  position: absolute; 
+  top: 10px;         
+  right: 10px;      
+  background-color: transparent; 
+  border: none;      
+  color: red;        
+  font-size: 16px;   
+  cursor: pointer;    
+}
+
+.delete-button:hover {
+  color: darkred;    
 }
