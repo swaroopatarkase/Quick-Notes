@@ -28,4 +28,10 @@ To run the Quick Notes app locally, follow these steps:
 npm install
 3. Start application:
 npm start
-4. Open your browser and go to http://localhost:3000.  
+4. Open your browser and go to http://localhost:3000. 
+
+## Hosted Link
+
+The project is hosted on Netlify 
+```bash
+https://quick-notes-dailynotes-making-web.netlify.app/
