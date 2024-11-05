@@ -13,7 +13,7 @@ A simple and user-friendly notes application built with React. Users can create,
 ## Technologies Used
 
 - **React:** JavaScript library for building user interfaces.
-- **HTML5 & CSS3:** For structuring and styling the application.
+- **HTML & CSS:** For structuring and styling the application.
 - **Local Storage:** To store notes persistently in the user's browser.
 
 ## Installation
