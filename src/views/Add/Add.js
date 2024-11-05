@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './Add.css';
 import toast from 'react-hot-toast';
 import left from '../Home/rb_2148222501.png';
-import home from '../Home/home-button.png';
 
 const Add = () => {
   const [title, setTitle] = useState('');
@@ -39,7 +38,9 @@ const Add = () => {
     <div>
       <div className="header">
         <Link to="/" className='link'>
-          <img src={home} alt='Go to home' className='icon' />
+        <button className='btn-primary'>
+          Home
+                </button>
         </Link>
         <div className='text-center header-title text-primary'>
           Add Note ✍️

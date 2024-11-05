@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Show.css';
-import home from '../Home/home-button.png';
 
 const Show = () => {
   const [notes, setNotes] = React.useState(JSON.parse(localStorage.getItem('Notes')) || []);
@@ -16,7 +15,9 @@ const Show = () => {
     <div>
       <div className="header">
         <Link to="/" className='link'>
-          <img src={home} alt='Go to home' className='icon' />
+        <button className='btn-primary'>
+          Home
+                </button>
         </Link>
         <div className='text-center header-title text-primary'>
           View Notes 🗒️
