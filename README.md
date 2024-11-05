@@ -24,16 +24,14 @@ To run the Quick Notes app locally, follow these steps:
    ```bash
    git clone https://github.com/swaroopatarkase/Quick-Notes
 
-   
-2. Install dependencies:
 
+2. Install dependencies:
 npm install
 
 3. Start application:
-
 npm start
-4. Open your browser and go to 
 
+4. Open your browser and go to 
 http://localhost:3000. 
 
 ## Hosted Link
