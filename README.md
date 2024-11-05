@@ -2,6 +2,8 @@
 
 A simple and user-friendly notes application built with React. Users can create, view, and manage their notes effortlessly.
 
+![Quick Notes App Screenshot](./src/views/Home/Screenshot%20(159).png)  
+
 ## Features
 
 - **Create Notes:** Users can add new notes with a title and content.
@@ -21,11 +23,3 @@ To run the Quick Notes app locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/swaroopatarkase/Quick-Notes
-
-2.Install dependencies
-npm install
-
-3.Start application
-npm start
-
-4.Open your browser and go to http://localhost:3000.   
